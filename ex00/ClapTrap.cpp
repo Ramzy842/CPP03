@@ -6,7 +6,7 @@
 /*   By: rchahban <rchahban@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/30 07:18:44 by rchahban          #+#    #+#             */
-/*   Updated: 2023/12/04 15:46:29 by rchahban         ###   ########.fr       */
+/*   Updated: 2023/12/04 16:45:10 by rchahban         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,9 +72,22 @@ ClapTrap::~ClapTrap()
 	std::cout << "ClapTrap has been destroyed!" << std::endl;
 }
 
+ClapTrap::ClapTrap(const ClapTrap& other)
+{
+	*this = other;
+	std::cout << "ClapTrap Copy constructor called" << std::endl;
+}
+
 ClapTrap& ClapTrap::operator=(const ClapTrap& other)
 {
-	(void)other;
+	if (this != &other)
+	{
+		this->setName(other.name);
+		this->setHitPoints(other.hitPoints);
+		this->setEnergyPoints(other.energyPoints);
+		this->setAttackDamage(other.attackDamage);
+	}
+	std::cout << "ClapTrap Copy assignment operator called" << std::endl;
 	return *this;
 };
 
