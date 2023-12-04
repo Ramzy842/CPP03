@@ -6,7 +6,7 @@
 /*   By: rchahban <rchahban@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/30 07:18:46 by rchahban          #+#    #+#             */
-/*   Updated: 2023/12/04 01:54:50 by rchahban         ###   ########.fr       */
+/*   Updated: 2023/12/04 11:01:44 by rchahban         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,11 +24,17 @@ class ClapTrap
 		int attackDamage;
 	public:
 		ClapTrap();
+		ClapTrap(const ClapTrap& other);
+		ClapTrap& operator=(const ClapTrap& other);
 		ClapTrap(std::string Name);
 		~ClapTrap();
 		void attack(const std::string& target);
 		void takeDamage(unsigned int amount);
 		void beRepaired(unsigned int amount);
+
+		// setters and getters
+		void setName(std::string Name);
+		const std::string getName(void);
 };
 
 #endif
