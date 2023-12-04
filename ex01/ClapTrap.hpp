@@ -6,7 +6,7 @@
 /*   By: rchahban <rchahban@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/30 07:18:46 by rchahban          #+#    #+#             */
-/*   Updated: 2023/12/04 12:41:44 by rchahban         ###   ########.fr       */
+/*   Updated: 2023/12/04 11:01:44 by rchahban         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,13 +34,7 @@ class ClapTrap
 
 		// setters and getters
 		void setName(std::string Name);
-		void setHitPoints(int amount);
-		void setEnergyPoints(int amount);
-		void setAttackDamage(int amount);
 		const std::string getName(void);
-		int getHitPoints(void);
-		int getEnergyPoints(void);
-		int getAttackDamage(void);
 };
 
 #endif
