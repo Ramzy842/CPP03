@@ -6,7 +6,7 @@
 /*   By: rchahban <rchahban@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/30 07:18:48 by rchahban          #+#    #+#             */
-/*   Updated: 2023/12/04 16:45:50 by rchahban         ###   ########.fr       */
+/*   Updated: 2023/12/05 15:47:52 by rchahban         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,23 +16,78 @@ int main ()
 {
 	ClapTrap John("John");
 	ScavTrap Alice("Alice");
-	
+	 
 	// John.attack(Alice.getName());
 	// John.attack(Alice.getName());
+	John.attack("Eren");
+	Alice.attack("Doe");
+	Alice.attack(John.getName());
+	Alice.attack(John.getName());
+	Alice.attack(John.getName());
+	Alice.attack(John.getName());
+	Alice.attack(John.getName());
+	Alice.attack(John.getName());
+	Alice.attack(John.getName());
+	Alice.attack(John.getName());
+	Alice.attack(John.getName());
+	Alice.attack(John.getName());
+	Alice.attack(John.getName());
+	Alice.attack(John.getName());
+	Alice.attack(John.getName());
+	Alice.attack(John.getName());
+	Alice.attack(John.getName());
+	Alice.attack(John.getName());
+	Alice.attack(John.getName());
+	Alice.attack(John.getName());
+	Alice.attack(John.getName());
 	Alice.attack(John.getName());
 
-	// John.attack(Alice.getName());
-	// John.attack(Alice.getName());
-	// John.attack(Alice.getName());
+	Alice.attack(John.getName());
+	Alice.attack(John.getName());
+	Alice.attack(John.getName());
+	Alice.attack(John.getName());
+	Alice.attack(John.getName());
+	Alice.attack(John.getName());
+	Alice.attack(John.getName());
+	Alice.attack(John.getName());
+	Alice.attack(John.getName());
+	Alice.attack(John.getName());
+	Alice.attack(John.getName());
+	Alice.attack(John.getName());
+	Alice.attack(John.getName());
+	Alice.attack(John.getName());
+	Alice.attack(John.getName());
+	Alice.attack(John.getName());
+	Alice.attack(John.getName());
+	Alice.attack(John.getName());
+	Alice.attack(John.getName());
+	Alice.attack(John.getName());
+	Alice.attack(John.getName());
 
-	// John.attack(Alice.getName());
-	// John.attack(Alice.getName());
-	// John.attack(Alice.getName());
-
-	// John.attack(Alice.getName());
-	// John.attack(Alice.getName());
-	// John.attack(Alice.getName());
-	// John.takeDamage(20);
-	// John.takeDamage(20);
+	Alice.attack(John.getName());
+	Alice.attack(John.getName());
+	Alice.attack(John.getName());
+	Alice.attack(John.getName());
+	Alice.attack(John.getName());
+	Alice.attack(John.getName());
+	Alice.attack(John.getName());
+	Alice.attack(John.getName());
+	Alice.attack(John.getName());
+	Alice.attack(John.getName());
+	Alice.attack(John.getName());
+	Alice.attack(John.getName());
+	Alice.attack(John.getName());
+	Alice.attack(John.getName());
+	Alice.attack(John.getName());
+	Alice.attack(John.getName());
+	Alice.attack(John.getName());
+	Alice.attack(John.getName());
+	Alice.attack(John.getName());
+	Alice.attack(John.getName());
+	Alice.attack(John.getName());
+	Alice.takeDamage(50);
+	Alice.takeDamage(40);
+	Alice.takeDamage(40);
+	Alice.guardGate();
 	return (0);
 }

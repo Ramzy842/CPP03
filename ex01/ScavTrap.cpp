@@ -6,7 +6,7 @@
 /*   By: rchahban <rchahban@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/04 11:31:12 by rchahban          #+#    #+#             */
-/*   Updated: 2023/12/04 16:46:43 by rchahban         ###   ########.fr       */
+/*   Updated: 2023/12/05 15:43:19 by rchahban         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,32 +14,40 @@
 
 ScavTrap::ScavTrap()
 {
-	// this->setHitPoints(100);
-	// this->setEnergyPoints(50);
-	// this->setAttackDamage(20);
-	// this->setName("Default");
+	this->setHitPoints(100);
+	this->setEnergyPoints(50);
+	this->setAttackDamage(20);
 	std::cout << "ScavTrap has been created" << std::endl;
+	std::cout << "---------------------------------------------" << std::endl;
 }
 
-ScavTrap::ScavTrap(std::string Name)
+ScavTrap::ScavTrap(std::string Name) : ClapTrap(Name)
 {
-	// this->setHitPoints(100);
-	// this->setEnergyPoints(50);
-	// this->setAttackDamage(20);
-	// this->setName(Name);
+	this->setHitPoints(100);
+	this->setEnergyPoints(50);
+	this->setAttackDamage(20);
 	std::cout << "ScavTrap has been created" << std::endl;
+	std::cout << "---------------------------------------------" << std::endl;
 }
 
-// ScavTrap::ScavTrap(const ScavTrap& other)
-// {
-	
-// }
+ScavTrap::ScavTrap(const ScavTrap& other)
+{
+	std::cout << "ScavTrap Copy Constructor" << std::endl; 
+	*this = other;
+	std::cout << "---------------------------------------------" << std::endl;
+}
 
-// ScavTrap& ScavTrap::operator=(const ScavTrap& other)
-// {
-// 	(void) other;
-// 	return (*this);
-// }
+ScavTrap& ScavTrap::operator=(const ScavTrap& other)
+{
+	if (this != &other)
+	{
+		this->setName(other.getName());
+		this->setHitPoints(other.getHitPoints());
+		this->setAttackDamage(other.getAttackDamage());
+		this->setEnergyPoints(other.getEnergyPoints());
+	}
+	return (*this);
+}
 
 ScavTrap::~ScavTrap()
 {
@@ -60,4 +68,5 @@ void ScavTrap::attack(const std::string& target) {
 	}
 	else
 		std::cout << "Not enough energy points to attack!" << std::endl;
+	std::cout << "---------------------------------------------" << std::endl;
 }

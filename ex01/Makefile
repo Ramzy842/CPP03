@@ -6,7 +6,7 @@
 #    By: rchahban <rchahban@student.1337.ma>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/11/30 07:17:43 by rchahban          #+#    #+#              #
-#    Updated: 2023/11/30 07:19:10 by rchahban         ###   ########.fr        #
+#    Updated: 2023/12/05 12:09:38 by rchahban         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,7 +17,7 @@ CPP = c++
 CFLAGS = -Werror -Wall -Wextra -std=c++98
 
 # Source files
-SRC = main.cpp ClapTrap.cpp
+SRC = main.cpp ClapTrap.cpp ScavTrap.cpp
 
 # Object files generated from source files
 OBJ = $(SRC:.cpp=.o)
