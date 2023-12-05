@@ -10,12 +10,12 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "./ScavTrap.hpp"
+#include "./FragTrap.hpp"
 
 int main ()
 {
 	ClapTrap John("John");
-	ScavTrap Alice("Alice");
+	FragTrap Alice("Alice");
 	 
 	// John.attack(Alice.getName());
 	// John.attack(Alice.getName());
@@ -88,6 +88,6 @@ int main ()
 	Alice.takeDamage(50);
 	Alice.takeDamage(40);
 	Alice.takeDamage(40);
-	Alice.guardGate();
+	Alice.highFivesGuys();
 	return (0);
 }

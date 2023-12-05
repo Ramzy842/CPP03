@@ -17,7 +17,7 @@ CPP = c++
 CFLAGS = -Werror -Wall -Wextra -std=c++98
 
 # Source files
-SRC = main.cpp ClapTrap.cpp ScavTrap.cpp
+SRC = main.cpp ClapTrap.cpp ScavTrap.cpp FragTrap.cpp
 
 # Object files generated from source files
 OBJ = $(SRC:.cpp=.o)
